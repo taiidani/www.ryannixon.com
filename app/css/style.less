@@ -12,18 +12,11 @@ a img {
 
 address {
 	font-style: normal;
+	margin-bottom: 23px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Sans', Helvetica, sans-serif;
-}
-
-.clear {
-	clear: both;
-}
-
-address {
-	margin-bottom: 23px;
 }
 
 body {
@@ -88,6 +81,9 @@ h2 {
 
 /* @group Global Class Declarations */
 
+.clear {
+	clear: both;
+}
 
 .frame {
 	position: relative;
@@ -295,6 +291,83 @@ h2 {
 		margin-right: 5px;
 		vertical-align: bottom;
 		line-height: 93px;
+	}
+}
+
+#source {
+	position: fixed;
+	top: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.5s ease-in-out;
+
+	background: #000;
+	z-index: 60;
+	padding: 0 1em;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	&:target {
+		height: inherit;
+		right: 1em;
+		bottom: 1em;
+		left: 1em;
+		opacity: 0.9;
+		overflow: auto;
+
+		@media screen and (max-width:480px) {
+			border-radius: 0;
+			padding: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.str { color: #EC7600; }
+	.kwd { color: #93C763; }
+	.com { color: #66747B; }
+	.typ { color: #678CB1; }
+	.lit { color: #FACD22; }
+	.pun { color: #F1F2F3; }
+	.pln { color: #F1F2F3; }
+	.tag { color: #8AC763; }
+	.atn { color: #E0E2E4; }
+	.atv { color: #EC7600; }
+	.dec { color: purple; }
+	pre.prettyprint { border: none; }
+
+	ol.linenums {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	}
+
+	li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+	    color: #555;
+	    list-style-type: decimal;
+	}
+
+	li.L1, li.L3, li.L5, li.L7, li.L9 {
+	    background: #111;
+	}
+
+	.close {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 0.5em 1.5em 0.5em 0.5em;
+		color: #AAA;
+		text-decoration: none;
+		border: 1px solid #BBB;
+		border-top: none;
+		border-bottom-left-radius: 10px;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+			background-color: #333;
+		}
 	}
 }
 

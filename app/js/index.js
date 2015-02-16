@@ -20,6 +20,8 @@ $(function() {
 		
 		$(this).data('dialog', d);
 	});
+
+	viewSource();
 	
 });
 
@@ -32,4 +34,13 @@ function printWebsite(evt) {
 function readMore(evt) {
 	$(this).hide();
 	$(this).next().slideDown('fast');
+}
+
+function viewSource(evt) {
+	var html = $("html").html();
+
+	//Re-add the doctype which isn't included in the html
+	html = "<!DOCTYPE html>\n" + html;
+
+	$("#source .content").text(html);
 }

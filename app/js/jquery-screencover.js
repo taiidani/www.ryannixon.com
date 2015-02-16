@@ -85,14 +85,14 @@ jQuery.fn.screenCover = function(options) {
 	obj.show().removeClass('hidden').appendTo(frame);
 
 	//Any associated triggers will cause the screencover to appear
-	$(settings.trigger).css('cursor', 'pointer').click(function() {
+	$(settings.trigger).css('cursor', 'pointer').on('click', function() {
 		$(frame).center().show();
 		cover.fadeIn(settings.ondisplay);
 
 		if(settings.preventDefault) return false;
 	});
 
-	cover.click(function() {
+	$(document.body).on('click', "#screencover", function() {
 		//Hide the bound element
 		jQuery(frame).hide();
 
@@ -101,7 +101,7 @@ jQuery.fn.screenCover = function(options) {
 	});
 
 	//Call the screencover close event if the escape key is pressed
-	jQuery(document.body).keyup(function(evt) {
+	$(document.body).on('keyup', function(evt) {
 		if(evt.keyCode == 27) cover.click();
 	});
 

@@ -1,17 +1,16 @@
 <!doctype html>
-
+<html lang="en">
 <!--
 A little about my work:
 
 I focus on hand coded HTML with preference to HTML5. While I prefer to design for modern web browsers and allow for graceful
-degradation of features, I will focus on legacy browsers such as IE6 and IE7 if a target user base may use those browsers...but I think a personal website can thankfully throw out IE7/8 :)
+degradation of features, I will focus on legacy browsers such as IE7 and IE8 if a target user base may use those browsers...but like any good web developer I would prefer to avoid Internet Explorer if possible :)
 
 The page source below is indicative of my work. I like valid HTML and organized stylesheets, and typically employ the use of
-the jQuery library to enhance my workflow.
+external libraries to enhance my workflow and reduce the need for code that requires maintenance.
 
 -->
 
-<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0" />
@@ -20,19 +19,21 @@ the jQuery library to enhance my workflow.
 	<title>Ryan Nixon - Web Developer &amp; Software Engineer</title>
 	
 	<!-- Google Font API -->
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Droid+Sans' />
+	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Droid+Sans' />
 	
-	<!-- LESS-compiled and minified stylesheet -->
+	<!-- LESS-compiled and minified responsive stylesheet. I would also normally use a CSS framework, but not here -->
 	<link rel="stylesheet" href="/css/style.css" media="screen" />
 	<link rel="stylesheet" href="/css/print.css" media="print" />
 	
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- Employing the jQuery library to assist with cross-browser JavaScript -->
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="/js/jquery-screencover.js"></script>
 	<script src="/js/index.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
 	
 	<!-- IE HTML5 Compatibility -->
 	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<!-- Google Analytics -->
@@ -61,11 +62,7 @@ the jQuery library to enhance my workflow.
 				<div id="info">
 					<h1>Ryan Nixon</h1>
 					<address>
-						<div>
-							812 SE 136th Ave E50<br/>
-							Vancouver, WA 98683
-						</div>
-						<div id="phone">(907) 602-2349</div>
+						<div id="phone">(360) 335-4260</div>
 						<div id="email"><a href="mailto:ryan@ryannixon.com">ryan@ryannixon.com</a></div>
 					</address>
 				</div>
@@ -84,7 +81,7 @@ the jQuery library to enhance my workflow.
 
 			<p>I am a web developer & software engineer with expertise in web services, web applications and application interfaces. My work emphasizes the use of open technologies with clean, organized, standards-compliant code.</p>
 
-			<p class='noprint'>Need an example? Try <a href='#' class='printPage'>printing</a> this page.</p>
+			<p class='noprint'>Need an example? Try <a href="#source">viewing the source</a> or <a href='#' class='printPage'>printing</a> this page.</p>
 		</div>
 	</section>
 	
@@ -94,7 +91,7 @@ the jQuery library to enhance my workflow.
 				<h1>Skills</h1>
 			</header>
 			<p><strong>Software:</strong> Apache HTTPD, IIS 7,  Microsoft SQL Server, Visual Studio 2010, Windows Communication Foundation, Windows Server 2003/2008</p>
-			<p><strong>Libraries/Frameworks:</strong> CodeIgniter, CommonSpot 6, Concrete5, Django, jQuery, Kohana, Smarty, WordPress</p>
+			<p><strong>Libraries/Frameworks:</strong> Codeception BDD, CodeIgniter, CommonSpot 6, Concrete5, Django, jQuery, Kohana, Smarty, WordPress</p>
 			<p><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, C#, Python, XSL, Java, ColdFusion</p>
 			<p><strong>Databases:</strong> MySQL, PostgreSQL, Microsoft SQL Server 2008, SQLite, SunOne LDAP, Microsoft Active Directory</p>
 			<p><strong>Version Control:</strong> Subversion, Git</p>
@@ -127,9 +124,22 @@ the jQuery library to enhance my workflow.
 					<h2>Self-employed at Ryan Nixon Development, 2011 - Present</h2>
 				</header>
 				<div class='jobDescription'>
-					<p>Freelance web development and consulting for various clients. I focused on developing non-trivial web sites and web applications using PHP or Python, and setting up content management systems for clients.</p>
+					<p>Freelance web development and consulting for various clients. I focus on:</p>
+					<ul>
+						<li>Developing non-trivial web sites and web applications using PHP or Python</li>
+						<li>Setting up content management systems for clients and providing training</li>
+						<li>Performing damage control on unorganized or outdated projects</li>
+						<li>Refactoring, testing and documenting existing code bases</li>
+					</ul>
 
-					<p>Advised on and implemented hosting solutions, including DreamHost and GoDaddy shared servers, RackSpace Cloud Servers, and DotCloud PaaS hosting.</p>
+					<p>When applicable I also provide advice on and implement hosting solutions, including:</p>
+					<ul>
+						<li>DreamHost and GoDaddy shared servers</li>
+						<li>RackSpace and AWS Cloud Servers</li>
+						<li>DotCloud or similar PaaS hosting</li>
+					</ul>
+
+					<p>My work is best performed when in direct contact with a project manager and/or front-end designer. My goals are to enable performant applications that enable self-service by end-users, which only succeed when I have a direct path to understanding a client's needs.</p>
 				</div>
 			</article>
 
@@ -515,11 +525,22 @@ the jQuery library to enhance my workflow.
 	<footer class='footer noprint textureBar'>
 		<div id="w3c">
 			<p>Page<br/> created<br/> using:</p>
-			<a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Device Access" title="HTML5 Powered with CSS3 / Styling, and Device Access"></a>
+			<a href="http://www.w3.org/html/logo/"><img src="//www.w3.org/html/logo/badge/html5-badge-h-css3-device.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Device Access" title="HTML5 Powered with CSS3 / Styling, and Device Access"></a>
 		</div>
 
 		<div class='clear'></div>
 	</footer>
 
+	<div id='source' class='noprint'>
+		<div class='inner'>
+			<a href="#" class='close'>X Close</a>
+			<pre class='content prettyprint'></pre>
+		</div>
+	</div>
+
+	<!--
+		There are of course a few cluttered items that will appear here in my View Source implementation. I
+		include all the source, including generated DOM objects!
+	-->
 </body>
 </html>
