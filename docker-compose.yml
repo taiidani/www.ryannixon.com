@@ -6,4 +6,4 @@ services:
     ports:
       - 80:4000
     volumes:
-      - ./src:/srv/jekyll
+      - .:/srv/jekyll
