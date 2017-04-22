@@ -1,7 +1,10 @@
-@import 'screencover.less';
+---
+---
+
+@import 'screencover';
 
 body {
-	font: 1em 'Myriad Pro', Helvetica, sans-serif;
+	font: 1em 'Helvetica Neue', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -16,7 +19,7 @@ address {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Droid Sans', Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', 'Droid Sans', sans-serif;
 }
 
 body {
@@ -38,7 +41,7 @@ body > header {
 		left: 0;
 		margin: 0;
 		padding: 0;
-		font: normal 70pt Optima, Helvetica, sans-serif;
+		font: normal 70pt Optima, sans-serif;
 	}
 
 	nav ul {
@@ -79,6 +82,12 @@ h2 {
 	margin-bottom: 0.5em;
 }
 
+@mixin frame {
+	position: relative;
+	width: 960px;
+	margin: auto;
+}
+
 /* @group Global Class Declarations */
 
 .clear {
@@ -86,9 +95,7 @@ h2 {
 }
 
 .frame {
-	position: relative;
-	width: 960px;
-	margin: auto;
+	@include frame();
 }
 
 .jobDescription {
@@ -244,7 +251,7 @@ h2 {
 }
 
 #content {
-	.frame;
+	@include frame();
 	padding: 10px;
 }
 

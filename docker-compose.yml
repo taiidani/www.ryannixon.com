@@ -1,8 +1,9 @@
 version: '2'
 services:
   web:
-    image: nginx:1.9-alpine
+    image: jekyll/jekyll
+    command: jekyll serve
     ports:
-      - 80:80
+      - 80:4000
     volumes:
-      - ./app:/usr/share/nginx/html:ro
+      - ./src:/srv/jekyll
