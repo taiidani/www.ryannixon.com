@@ -14,9 +14,7 @@ time: 2011
     
     <p>Developers seeking to extend the ITCC Dashboard with new features may use modules to hook in to the application in specific ways. These hooks include entries in the left navigation bar and account buttons/attributes but additional hooks can easily be created with modifications to the core.</p>
     
-    <footer class="noprint">
-        <p><a href='http://testcallcenter.uaa.alaska.edu'>Visit Site (Password Protected)</a> <a href='/uploads/ITCC%20Dashboard.zip'>Download Example Code</a></p>
-    </footer>
+    <footer class="noprint"></footer>
 </aside>
 <ul class='mediums'>
     <li>Technologies:</li>
