@@ -1,8 +1,6 @@
 ---
 ---
 
-@import 'screencover';
-
 body {
 	font: 1em 'Helvetica Neue', sans-serif;
 	margin: 0;
@@ -106,107 +104,6 @@ h2 {
 	display: none;
 }
 
-.project {
-	display: inline-block;
-	cursor: pointer;
-	min-height: 100px;
-	width: 24%;
-	border-radius: 3px;
-	vertical-align: top;
-
-	&:hover {
-		background-color: rgba(100, 100, 100, 0.5);
-	}
-
-	aside {
-		display: none;
-	}
-
-	h2 {
-		padding: 0;
-		margin: 0;
-		font-size: 1.1em;
-	}
-
-	h3 {
-		display: none;
-	}
-
-	header {
-		position: absolute;
-		top: 20px;
-		left: 0;
-		right: 0px;
-		background-color: rgb(20, 20, 20);
-		background-color: rgba(20, 20, 20, 0.9);
-		padding: 5px 0px 5px 15px;
-	}
-
-	img {
-		width: 100%;
-	}
-
-	.cover {
-		position: absolute;
-		z-index: 50;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-color: rgba(150, 150, 150, 0.2);
-	}
-
-	&:hover {
-		.cover {
-			display: none;
-		}
-	}
-
-	.inner {
-		position: relative;
-		color: #FAFAFA;
-		text-decoration: none;
-		margin: 10px;
-	}
-
-	.mediums {
-		display: none;
-		position: absolute;
-		z-index: 10;
-		bottom: 0;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-
-		li {
-			display: inline-block;
-			padding: 2px;
-			border-radius: 2px;
-			background-color: #337;
-			font-size: 0.7em;
-			margin-right: 1em;
-			overflow: hidden;
-			color: #EEE;
-
-			&:first-child {
-				display: none;
-			}
-		}
-	}
-
-	&:hover .mediums {
-		display: block;
-	}
-}
-
-.readMoreExpand {
-	cursor: pointer;
-	text-decoration: underline;
-	font-weight: bold;
-	font-style: italic;
-}
-
 .technologies {
 	list-style: none;
 	margin: 0;
@@ -279,13 +176,9 @@ h2 {
 
 #profile {
 	float: right;
-
-	address {
-		text-shadow: 1px 1px 0px #CCC;
-	}
 }
 
-#skills, #education, #awards {
+#skills, #education, #awards, #work {
 	float: right;
 	clear: right;
 	width: 250px;

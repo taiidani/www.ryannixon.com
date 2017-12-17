@@ -46,45 +46,6 @@ h2 {
 	height: 100px;
 }
 
-.project {
-/*	clear: left;*/
-}
-
-.project img, .project .cover, .project h3 {
-	display: none;
-}
-
-.project time {
-	font-weight: bold;
-}
-
-.project .mediums {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.project .mediums li {
-	display: inline;
-}
-
-.project .mediums li:first-child {
-	display: inline;
-	font-weight: bold;
-}
-
-.project .mediums li:after {
-	content: ",";
-}
-
-.project .mediums li:first-child:after, .project .mediums li:last-child:after {
-	content: "";
-}
-
-.screencover_frame {
-	display: none;
-}
-
 /* @group ID-Specific Declarations */
 
 #employment, #portfolio, #references {

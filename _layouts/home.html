@@ -11,15 +11,19 @@
 		<div id='content' class='frame clear'>
 
 			{{content}}
+			<section id="work">
+				<p>
+					<a href="https://github.com/taiidani"><img src="/images/GitHub-Mark-64px.png" alt="GitHub" /></a>
+					<a href="https://www.linkedin.com/in/ryannixon2/"><img src="/images/In-2C-66px-R.png" alt="LinkedIn" /></a>
+				</p>
+			</section>
+
 			<section id="skills">
 				<header>
 					<h1>Skills</h1>
 				</header>
-				<p><strong>Software:</strong> Apache HTTPD, IIS 7,  Microsoft SQL Server, Visual Studio 2010, Windows Communication Foundation, Windows Server 2003/2008</p>
-				<p><strong>Libraries/Frameworks:</strong> Codeception BDD, CodeIgniter, CommonSpot 6, Concrete5, Django, jQuery, Kohana, Smarty, WordPress</p>
-				<p><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, C#, Python, XSL, Java, ColdFusion</p>
-				<p><strong>Databases:</strong> MySQL, PostgreSQL, Microsoft SQL Server 2008, SQLite, SunOne LDAP, Microsoft Active Directory</p>
-				<p><strong>Version Control:</strong> Subversion, Git</p>
+				<h2>Languages</h2> <p>HTML, CSS, JavaScript, PHP, Python, C#, Golang, Java, Bash</p>
+				<h2>Experience With</h2> Docker, CircleCI, Codeship, AWS, Sentry, Datadog, Jenkins</p>
 			</section>
 			
 			<section id="education">
@@ -54,54 +58,6 @@
 						</div>
 					</article>
 				{% endfor %}
-
-				<p class='readMoreExpand noprint'>Need to see more?</p>
-				<div class='readMore noprint'>
-					<article>
-						<header>
-							<h2>Lab Consultant at University of Alaska Anchorage, 2005 - 2007, 2009 - 2010</h2>
-						</header>
-						<div class='jobDescription'>
-							<p>Assisted lab patrons with software and hardware issues. Performed maintenance on the various IT Open Labs around campus.</p>
-						</div>
-					</article>
-
-					<article>
-						<header>
-							<h2>Student Employee at University of Alaska Anchorage, Spring 2006</h2>
-						</header>
-						<div class='jobdescription'>
-							<p>Performed research on using a genetic algorithm to optimize wavelet coefficients for use in compressing images.</p>
-							<p>Employed use of Arctic Region Supercomputing Center, using their Matlab facilities.</p>
-						</div>
-					</article>
-				</div>
-			</section>
-
-			<section id="portfolio" class="clear">
-				<header>
-					<h1>Projects</h1>
-				</header>
-
-				{% for project in site.projects %}
-					<article class='project'>
-						<div class='inner'>
-							<header>
-								<hgroup>
-									<h2>{{project.title}}</h2>
-									<h3>{{project.subtitle}}</h3>
-								</hgroup>
-								<time>{{project.time}}</time>
-							</header>
-
-							{{project.content}}
-							
-							<div class='cover'></div>
-						</div>
-					</article>
-				{% endfor %}
-				
-				<footer></footer>
 			</section>
 			
 			<section id="references" class="noscreen nomobile">
