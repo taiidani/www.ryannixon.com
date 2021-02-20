@@ -1,0 +1,9 @@
+<div class="awards-container container-block">
+    <h2 class="container-block-title">Awards</h2>
+    <ul class="list-unstyled awards-list">
+        {{ range .Site.Params.awards.list }}
+        <li>{{ .award }}</li>
+        {{ end }}
+    </ul>
+</div>
+<!--//awards-->

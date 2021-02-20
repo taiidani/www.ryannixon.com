@@ -1,0 +1,281 @@
+# Page settings
+
+baseurl = "https://www.ryannixon.com/"
+languageCode = "en-us"
+title = "Ryan Nixon - Cloud Engineer"
+theme = "hugo-orbit-theme"
+# googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Ryan Nixon resume website"
+    author = "Ryan Nixon"
+    title = "Ryan Nixon - Cloud Engineer"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Ryan Nixon"
+        tagline = "Cloud Engineer"
+        avatar = "//www.gravatar.com/avatar/5e2bad59819fbfffa216df299e76fcbd.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: ryan@ryannixon.com"
+        title = "ryan@ryannixon.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/ryannixon2"
+        title = "linkedin.com/in/ryannixon2"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/taiidani"
+        title = "github.com/taiidani"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Bachelors in Computer Science, Minor in Dance"
+        college = "University of Alaska Anchorage"
+        dates = "2011"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Go"
+        level = "Preferred"
+
+        [[params.language.list]]
+        language = "Python"
+        level = "Experienced"
+
+        [[params.language.list]]
+        language = "PHP"
+        level = "Experienced"
+
+        [[params.language.list]]
+        language = "Java"
+        level = "Rusty"
+
+        [[params.language.list]]
+        language = "C#"
+        level = "Rusty"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Gaming"
+
+        [[params.interests.list]]
+        interest = "Hiking"
+
+        [[params.interests.list]]
+        interest = "Dancing"
+
+    # Awards section
+    [params.awards]
+        enable = true
+        title = "Awards"
+
+        [[params.awards.list]]
+        award = "Alaska Department of Public Safety, 2011: Commendation for Honorable Service"
+
+# Main body sections
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "I am a Cloud Platform Engineer with expertise in web services, cloud infrastructure, CLI tools and CI/CD pipelines. My work emphasizes the use of open technologies with clean, organized, standards-compliant code paired with heavy documentation."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Senior Cloud Platform Engineer"
+        dates = "2016 - Present"
+        company = "Vacasa, Portland, OR"
+        details = """
+* Set up and managed a Docker Swarm Mode cluster in production, then later led a subsequent migration to AWS EKS.
+* Led an internal Vacasa `vc` CLI automation tool through multiple iterations and languages (PHP, Bash scripts, Go).
+* Rearchitected the local development environment into a Docker-centric model, enabling containerized versions of software to match production.
+* Designed and implemented a CI/CD pipeline using CircleCI, Docker Hub/ECR, and Jenkins/ArgoCD/Atlantis. Deployments were fed through GitHub Deployments and triggered via both GitOps & ChatOps practices.
+* Proposed and implemented Terraform-based infrastructure-as-code practices throughout the company including AWS Account, Managed VPC, GitHub Repository, and access control provisioning.
+* Managed a centralized monitoring system using Datadog, Sentry, and PagerDuty with a stong emphasis on mature operational practices.
+* Spearheaded converting a legacy monolithic PHP 5.6 codebase into a PHP 7.2 (and polyglot) microservices-based structure.
+"""
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2014 - 2016"
+        company = "Vacasa, Portland, OR"
+        details = """
+* Implemented a PHP-based background task system based on queueing and event-based jobs, with containerized workers isolated from the web processes.
+* Implemented a new Unit (e.g. property) management page, converting the existing monolithic design into an MVC structure.
+* Converted the administration backend to use an RBAC hierarchical permissions structure.
+* Designed and implemented a ticket tracking system for internal IT and Maintenance tasks.
+* Implemented and trained for the use of BDD testing using the Codeception PHP testing framework.
+* Designed an in-house i18n translation system for localizing the public-facing website into various languages.
+"""
+
+        [[params.jobs.list]]
+        position = "Analyst/Programmer IV"
+        dates = "2013 - 2014"
+        company = "Alaska Department of Public Safety, Anchorage, AK"
+        details = """
+Worked remotely to train my replacement for Analyst/Programmer III and secondary, teaching them the intricacies of the CoTS product I had managed. Lead training sessions twice or more a week while adding technical details on the in-house MediaWiki product that I set up for end-user documentation.
+
+Developed a number of web products including a web-based interface on top of Public Safety’s legacy data store using ASP.MVC 4 and Entity Framework 6, as well as a Team Project List to be used as a high-level complement to Asana and Subversion.
+"""
+
+        [[params.jobs.list]]
+        position = "Adjunct Faculty"
+        dates = "2012 - 2013"
+        company = "University of Alaska Anchorage, Anchorage, AK"
+        details = """
+Taught CS109 SQL, providing instruction to students taking 100 level courses in Computer Science. Developed a curriculum, projects and exams that challenged students to critically think about their course topic and encouraged them to experiment with advanced queries.
+
+Taught CS201 Programming Concepts I, the entry-level class for students in a Computer Science major. Educated future programmers with object-oriented practices, inheritance & polymorphism concepts, exception handling, recursive algorithms and more.
+"""
+
+        [[params.jobs.list]]
+        position = "Analyst/Programmer III"
+        dates = "2011 - 2013"
+        company = "Alaska Department of Public Safety, Anchorage, AK"
+        details = """
+Assigned as technical lead to the ARMS project, a records management system based off of the [Niche RMS](http://www.nicherms.com/) being implemented to replace the paper-based incident tracking system currently in use. Set up the product infrastructure, XSLT-based reports and client deployment packages including in-house update functionality using a WCF web service and a C# background Windows service.
+
+Also developed and supported a C# interface to synchronize person records from the Alaska Public Safety Information Network (APSIN) to the ARMS application.
+
+Assisted with Niche Technology in developing the capability for their application to support Uniform Crime Reporting (UCR) statistics that are submitted to the FBI on an annual basis for reporting. This involved the use of both T-SQL for working on the back-end report and a Python/HTML/JavaScript solution to provide a human readable interface for the statistics.
+"""
+
+        [[params.jobs.list]]
+        position = "Junior Software Engineer"
+        dates = "2010 - 2011"
+        company = "University of Alaska Anchorage, Anchorage, AK"
+        details = """
+Developed and implemented a new UAA DenaliView website theme used by all department and institution pages. Created new elements and form fields within the CMS to support department content creation.
+
+Designed and developed the UAA IT Services Call Center Dashboard, an internal web application used by all Call Center technicians throughout the University of Alaska system.
+
+Trained university staff and faculty to use UAA’s CommonSpot CMS on their sites. Assisted with developing site workflows and organization schemas. Performed site reviews on department web sites to ensure accessibility and web standards compliance.
+"""
+
+        [[params.jobs.list]]
+        position = "Technician"
+        dates = "2006 - 2008"
+        company = "Design-PT, Inc, Anchorage, AK"
+        details = """
+As Lead Maintenance Technician, performed routine and special maintenance on client sites and trained new technicians.
+
+As Programmer, developed web sites for various clients and kept those sites up to date with routine content updates.
+
+Also acted as primary consultant on all Apple assets.
+"""
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**Most of my work has been internal to the companies that I am employed at. However I do maintain some public-facing projects and experiments.**"
+
+        [[params.projects.list]]
+        title = "Jenkins Terraform Provider"
+        url = "https://github.com/taiidani/terraform-provider-jenkins"
+        tagline = "A Terraform provider for the Jenkins CI/CD service. Published on the Terraform Registry."
+
+        [[params.projects.list]]
+        title = "Guess My Word"
+        url = "https://github.com/taiidani/guess-my-word"
+        tagline = "A simple daily word guessing game, used to try out new Go techniques and application hosting strategies."
+
+        [[params.projects.list]]
+        title = "Lil' Dumpster"
+        url = "https://github.com/team-dumpster-fire/lil-dumpster"
+        tagline = "A Discord bot that I maintain for a small Discord community that I manage."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Go"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Terraform"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Docker Engine"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "AWS Cloud"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "GCP Cloud"
+        level = "65%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "65%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
