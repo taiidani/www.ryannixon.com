@@ -139,7 +139,7 @@ disable404 = true
 * Rearchitected the local development environment into a Docker-centric model, enabling containerized versions of software to match production.
 * Designed and implemented a CI/CD pipeline using CircleCI, Docker Hub/ECR, and Jenkins/ArgoCD/Atlantis. Deployments were fed through GitHub Deployments and triggered via both GitOps & ChatOps practices.
 * Proposed and implemented Terraform-based infrastructure-as-code practices throughout the company including AWS Account, Managed VPC, GitHub Repository, and IAM Role-based access control provisioning.
-* Managed a centralized monitoring system using Datadog, Sentry, and PagerDuty with a stong emphasis on mature operational practices.
+* Managed a centralized monitoring system using Datadog, Sentry, and PagerDuty with a strong emphasis on mature operational practices.
 * Spearheaded converting a legacy monolithic PHP 5.6 codebase into a PHP 7.2 (and polyglot) microservices-based structure.
 """
 
