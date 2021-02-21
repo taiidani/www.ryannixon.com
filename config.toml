@@ -138,7 +138,7 @@ disable404 = true
 * Led an internal Vacasa `vc` CLI automation tool through multiple iterations and languages (PHP, Bash scripts, Go).
 * Rearchitected the local development environment into a Docker-centric model, enabling containerized versions of software to match production.
 * Designed and implemented a CI/CD pipeline using CircleCI, Docker Hub/ECR, and Jenkins/ArgoCD/Atlantis. Deployments were fed through GitHub Deployments and triggered via both GitOps & ChatOps practices.
-* Proposed and implemented Terraform-based infrastructure-as-code practices throughout the company including AWS Account, Managed VPC, GitHub Repository, and access control provisioning.
+* Proposed and implemented Terraform-based infrastructure-as-code practices throughout the company including AWS Account, Managed VPC, GitHub Repository, and IAM Role-based access control provisioning.
 * Managed a centralized monitoring system using Datadog, Sentry, and PagerDuty with a stong emphasis on mature operational practices.
 * Spearheaded converting a legacy monolithic PHP 5.6 codebase into a PHP 7.2 (and polyglot) microservices-based structure.
 """
@@ -148,8 +148,8 @@ disable404 = true
         dates = "2014 - 2016"
         company = "Vacasa, Portland, OR"
         details = """
-* Implemented a PHP-based background task system based on queueing and event-based jobs, with containerized workers isolated from the web processes.
 * Implemented a new Unit (e.g. property) management page, converting the existing monolithic design into an MVC structure.
+• Implemented a background-worker system using Supervisord (and eventually Docker) allowing the front-end PHP website to offload long-running tasks.
 * Converted the administration backend to use an RBAC hierarchical permissions structure.
 * Designed and implemented a ticket tracking system for internal IT and Maintenance tasks.
 * Implemented and trained for the use of BDD testing using the Codeception PHP testing framework.
