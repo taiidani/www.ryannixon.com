@@ -130,8 +130,20 @@ disable404 = true
         title = "Experiences"
 
         [[params.jobs.list]]
+        position = "Senior Developer Productivity Engineer"
+        dates = "2021 - Present"
+        company = "HashiCorp"
+        details = """
+* Built and distributed Go-based CLI tooling for managing Local Development environments.
+* Managed Cloud Boxes for testing & development leveraging TFC workspaces and AWS EC2.
+* Designed and implemented a splitting of the primary TFC services's Rails backend and Ember frontend into separately scalable services.
+* Led the Developer Productivity team in migrating from a bespoke deployment tool for the TFC Nomad clusters into GitHub Actions.
+* Provided leadership and vision for the Developer Productivity team, driving service roadmaps and sprint planning.
+"""
+
+        [[params.jobs.list]]
         position = "Senior Cloud Platform Engineer"
-        dates = "2016 - Present"
+        dates = "2016 - 2021"
         company = "Vacasa, Portland, OR"
         details = """
 * Set up and managed a Docker Swarm Mode cluster in production, then later led a subsequent migration to AWS EKS.
