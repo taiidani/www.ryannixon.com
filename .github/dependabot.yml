@@ -7,3 +7,7 @@ updates:
     groups:
       combined:
         patterns: ["*"]
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "monthly"
