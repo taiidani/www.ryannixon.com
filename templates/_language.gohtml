@@ -1,0 +1,8 @@
+            <div class="language-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+				{{ range .Language.Item }}
+                    <li>{{ .Language }} <span class="lang-desc">({{ .Level }})</span></li>
+				{{ end }}
+                </ul>
+            </div>

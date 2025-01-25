@@ -1,0 +1,11 @@
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <div class="intro">
+                    <p>{{ markdownify .Projects.Intro }}</p>
+                </div>
+				{{ range .Projects.Item }}
+                <div class="item">
+                    <span class="project-title"><a href="{{ .URL }}">{{ .Title }}</a></span> - <span class="project-tagline">{{ markdownify .Tagline }}</span>
+                </div>
+				{{ end }}
+            </section>

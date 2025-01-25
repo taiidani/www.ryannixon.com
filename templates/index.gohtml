@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ template "_head.gohtml" . }}
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar-wrapper">
+      {{ template "_profile.gohtml" . }}
+      {{ template "_contact.gohtml" . }}
+      {{ template "_education.gohtml" . }}
+      {{ template "_language.gohtml" . }}
+      {{ template "_interests.gohtml" . }}
+      {{ template "_awards.gohtml" . }}
+    </div>
+
+    <div class="main-wrapper">
+      {{ template "_summary.gohtml" . }}
+      {{ template "_experiences.gohtml" . }}
+      {{ template "_projects.gohtml" . }}
+      {{ template "_skills.gohtml" . }}
+    </div>
+  </div>
+
+  {{ template "_footer.gohtml" .}}
+  {{ template "_scripts.gohtml" .}}
+</body>
+
+</html>

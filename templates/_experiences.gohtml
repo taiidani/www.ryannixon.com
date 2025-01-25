@@ -1,0 +1,19 @@
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+    {{ range .Jobs.Item }}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{ .Position }}</h3>
+                <div class="time">{{ .Dates }}</div>
+            </div>
+            <div class="company">{{ .Company }}</div>
+        </div>
+        <div class="details">
+            <p>{{ markdownify .Details }}</p>
+        </div>
+    </div>
+    {{ end }}
+
+</section>
