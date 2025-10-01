@@ -22,9 +22,9 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version-file: go.mod
           cache: true
@@ -37,7 +37,7 @@ jobs:
         run: go run main.go
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
